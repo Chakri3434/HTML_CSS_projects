@@ -1,0 +1,51 @@
+body {
+  background-image: url(jakub-dziubak-XtUd5SiX464-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: Montserrat;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #494235;
+  height: 80px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.name {
+  flex: 1;
+  font-family: Poppins;
+  font-size: 34px;
+  margin-left: 50px;
+  color: rgb(16, 211, 211);
+  cursor: pointer;
+}
+.h {
+  margin-right: 50px;
+  font-family: Montserrat;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.sign-in {
+  font-size: 20px;
+  font-family: Montserrat;
+  color: white;
+  background-color: #93856b;
+  padding: 8px 12px;
+  border-radius: 18px;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  transition: background-color 0.75s;
+}
+.sign-in:hover {
+  color: #93856b;
+  background-color: white;
+  font-weight: 800;
+}
