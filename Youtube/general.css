@@ -1,4 +1,7 @@
 body {
   font-family: Arial;
-  
+  margin: 0%;
+  padding-top: 80px;
+  padding-left: 80px;
+  background-color: rgb(245, 243, 243);
 }
