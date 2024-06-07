@@ -1,8 +1,17 @@
 .header {
   display: flex;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 55px;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom-color:rgb(236, 234, 234) ;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  z-index: 10;
 }
 
 .left-corner {
@@ -30,6 +39,7 @@
 }
 
 .search-bar {
+  width: 0;
   height: 34px;
   flex: 1;
   padding-left: 10px;
