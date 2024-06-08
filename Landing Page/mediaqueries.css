@@ -1,0 +1,25 @@
+@media (max-width: 1060px) {
+  .h1 {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .h2 {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .h3 {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .h4 {
+    display: none;
+  }
+}
+@media (max-width: 530px) {
+  .h5 {
+    display: none;
+  }
+}
