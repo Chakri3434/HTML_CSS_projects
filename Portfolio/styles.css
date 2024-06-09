@@ -1,60 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
-p {
-  color:  rgb(85,85,85);
-}
-
 a, .btn {
   transition: all 300ms ease;
 }
-
-nav, .nav-links {
+.header {
   display: flex;
   flex-direction: row;
-}
-
-nav {
-  justify-content: space-around;
-  align-items: center;
   height: 17vh;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: lightblue;
 }
-
-.nav-links {
-  list-style: none;
-  gap: 32px;
-  font-size: 24px;
-}
-
 a {
   color: black;
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: gray;
+}
+.name {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  margin-left: 50px;
+  color: black;
+  cursor: default;
   text-decoration-color: white;
 }
 
-a:hover {
-  color: gray;
-  text-decoration: underline;
-  text-decoration-color: rgb(181,181,181);
-  text-underline-offset: 8px;
+.h1 {
+  margin-right: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
 }
 
-.name {
-  font-size: 32px;
+.h2 {
+  margin-right: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
 }
-.name:hover {
-  cursor: default;
+
+.h3 {
+  margin-right: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.h4 {
+  margin-right: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  margin-top: 18vh;
+  width: 400px;
+}
+.image {
+  width: 100%;
 }
