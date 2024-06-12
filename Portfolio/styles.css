@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 html {
   scroll-behavior: smooth;
@@ -25,7 +26,7 @@ a, .btn {
   right: 0;
 }
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 a:hover {
@@ -38,7 +39,7 @@ a:hover {
   font-family: "Poppins", sans-serif;
   font-size: 34px;
   margin-left: 50px;
-  color: black;
+  color: white;
   cursor: default;
   text-decoration-color: white;
 }
@@ -98,6 +99,8 @@ section {
 .my-image {
   border-radius: 60px;
   border-style: solid;
+  border-color: white;
+  background-color: white;
 }
 
 .section__text {
@@ -138,31 +141,17 @@ button {
 .button-2,
 .button-1 {
   border: rgb(53, 53, 53) 1.6px solid;
+  background-color: white
 }
 
 .button-2:hover,
 .button-1:hover {
   cursor: pointer;
-  border-radius: 0%;
-}
-
-.button-2,
-.button-1:hover {
-  background: rgb(53, 53, 53);
+  background: red;
   color: white;
+  border: red 1.6px solid;
 }
 
-.button-2:hover {
-  background: rgb(0, 0, 0);
-}
-
-.button-1 {
-  background: none;
-}
-
-.button-1:hover {
-  border: rgb(255, 255, 255) 1.6px solid;
-}
 
 #socials-container {
   display: flex;
@@ -192,17 +181,11 @@ button {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
 .details-container {
   padding: 24px;
   flex: 1;
-  background: white;
   border-radius: 32px;
-  border: rgb(53, 53, 53) 1.6px solid;
-  border-color: rgb(163, 163, 163);
+  border: white 1.6px solid;
   text-align: center;
 }
 
@@ -219,12 +202,12 @@ button {
 
 .project-btn {
   color: black;
-  border-color: rgb(163, 163, 163);
+  border-color: white;
   border-style: solid;
 }
 
 .project-btn:hover {
-  background: rgb(0, 0, 0);
+  background: red;
   color: white;
   cursor: pointer;
   border-color: rgb(0, 0, 0);
@@ -260,10 +243,6 @@ button {
   font-size: larger;
 }
 
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
+h1, h2, h3, p{
+  color: red;
 }
