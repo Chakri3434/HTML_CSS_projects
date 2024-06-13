@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RPS Game</title>
+    <link rel="stylesheet" href="08-rps.css">
   </head>
   <body>
 
@@ -24,7 +25,7 @@
       ">Reset Score</button>
     <script>
 
-      const score = JSON.parse(localStorage.getItem('score'))
+      let score = JSON.parse(localStorage.getItem('score'))
 
       function pickMove() {
         let comp=''
