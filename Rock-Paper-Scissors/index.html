@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="08-rps.css">
   </head>
   <body>
-
+    <p class="head">Rock Paper Scissors</p>
     <button onclick="
       alerts('Rock');
       ">Rock</button>
@@ -17,15 +17,20 @@
     <button onclick="
       alerts('Scissors');
       ">Scissors</button>
+
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
     
     <button onclick="
       score.Wins=0,
       score.Losses=0,
       score.ties=0
+      updateScore();
       ">Reset Score</button>
     <script>
-
-      let score = JSON.parse(localStorage.getItem('score'))
+      let score = JSON.parse(localStorage.getItem('score'));
+      updateScore();
 
       function pickMove() {
         let comp=''
@@ -42,6 +47,11 @@
         }
 
         return comp;
+      }
+
+      function updateScore() {
+        document.querySelector('.js-score')
+        .innerHTML=`Wins : ${score.Wins}, Losses: ${score.Losses}, Ties; ${score.ties}`;
       }
 
       function alerts(playerMove) {
@@ -97,9 +107,10 @@
         }
 
         localStorage.setItem('score', JSON.stringify(score));
+        document.querySelector('.js-result').innerHTML=result;
+        document.querySelector('.js-moves').innerHTML=`You picked ${playerMove}. Computer picked ${comp}.`;
 
-
-        alert(`You picked ${playerMove}. Computer picked ${comp}. ${result}\nWins : ${score.Wins}, Losses: ${score.Losses}, Ties; ${score.ties}`)
+        updateScore()
       }
 
       
