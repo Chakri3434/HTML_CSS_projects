@@ -1,0 +1,53 @@
+@media (max-width:1200px) {
+  .intro {
+    display:block;
+    margin-top: 2rem;
+  }
+  .image-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  section {
+    height: fit-content;
+    margin: 0 5%;
+  }
+  .text {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width:600px) {
+  .text {
+    font-size:1rem;
+    text-align: left;
+  }
+  p {
+    font-size: 12px;
+  }
+  .intro {
+    margin-bottom: 3rem;
+  }
+
+  .info {
+    display: none;
+  }
+  .name {
+    align-self: center;
+    margin: auto;
+  }
+  #about {
+    margin-bottom: 25rem; 
+  }
+  #education {
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 1.3rem;
+  }
+  .education-containers {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+}
