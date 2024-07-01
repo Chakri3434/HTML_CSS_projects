@@ -39,3 +39,7 @@ button:hover {
   color: blue;
   background-color: white;
 }
+.note {
+  font-size: 0.8rem;
+  color: gray;
+}
