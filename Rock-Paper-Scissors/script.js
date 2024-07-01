@@ -15,8 +15,18 @@ document.querySelector('.js-scissors-button')
     alerts('Scissors');
   })
 
+document.body.addEventListener('keydown', (event)=> {
+  if (event.key==='r') {
+    alerts('Rock');
+  }
+  else if (event.key==='p') {
+    alerts('Paper');
+  }
+  else if (event.key==='s') {
+    alerts('Scissors');
+  }
+})
 
-  
 function pickMove() {
   let comp=''
   let num2=Math.random();
