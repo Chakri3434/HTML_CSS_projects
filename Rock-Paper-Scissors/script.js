@@ -1,6 +1,22 @@
 let score = JSON.parse(localStorage.getItem('score'));
 updateScore();
 
+
+document.querySelector('.js-rock-button')
+  .addEventListener('click', ()=> {
+    alerts('Rock');
+  });
+document.querySelector('.js-paper-button')
+  .addEventListener('click',()=> {
+    alerts('Paper');
+  })
+document.querySelector('.js-scissors-button')
+  .addEventListener('click',()=> {
+    alerts('Scissors');
+  })
+
+
+  
 function pickMove() {
   let comp=''
   let num2=Math.random();
@@ -81,6 +97,7 @@ function alerts(playerMove) {
 
   updateScore()
 }
+
 let isautoplaying = false;
 let intervalId;
 function autoPlay() {
