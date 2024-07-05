@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+}
+.todo-grid {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+.task, .task-date {
+  padding: 0.5rem 1rem;
+}
+.del-button , .add-button{
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+.add-button {
+  background-color: green;
+}
+.del-button {
+  background-color: red;
+}
