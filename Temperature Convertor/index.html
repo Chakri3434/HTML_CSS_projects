@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="outbox">
+        <div>Temperature Convertor</div>
+        <div>
+            <input class="input-value temp" placeholder="Enter Temperature">
+            <select id="scaleSelect" class="input-value">
+                <option value="">Select Scale</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div>
+            <input class="input-value result" placeholder="Result">
+        </div>
+        <button onclick="convert()">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
